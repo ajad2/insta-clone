@@ -13,4 +13,9 @@ class ProfilesController extends Controller
         // dd($data);
         return view('profiles.index',['user'=>$user_data]);
     }
+
+    public function edit(User $user)
+    {
+        return view('profiles.edit', compact('user'));
+    }
 }
