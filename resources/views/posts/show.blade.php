@@ -8,9 +8,15 @@
          <img src="{{ asset('storage/'.$post->image)}}" class="w-100">
       </div>
 <div class="col-4">
-   <div>
-      <h3>{{ $post->user->name}}</h3>
-      <p>{{$post->caption}}</p>
+ 
+      <div>
+      <div class="font-weight-bold">{{ $post->user->name}}</div>
+</div>
+<div>
+<a href="#">Follow</a>
+</div>
+<hr>
+      <p><span class="font-weight-bold">{{ $post->user->name}}</span>     {{$post->caption}}</p>
 </div>
 </div>
 
